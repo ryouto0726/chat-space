@@ -5,5 +5,9 @@
 @import "mixins/vendor_prefix";
 @import "modules/side_bar";
 @import "modules/chat";
-@import "font-awesome";
+@import "modules/user";
+@import "modules/group";
+@import "modules/flash";
 @import "posts/posts";
+@import "config/colors";
+@import "font-awesome";
