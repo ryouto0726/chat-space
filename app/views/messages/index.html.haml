@@ -12,19 +12,15 @@
           - @group.users.each do |user|
             %li.member
               = user.name
-        
-
       .right-header
         .right-header__button
           Edit
     .messages
-      .messages
-        = render @messages
+      = render @messages
 
     .form
-      = form_for [@group, @message], class: 'js-form' do |f|
-      
-        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      = form_for [@group, @message], class: 'new_message' do |f|
+        = f.text_field :content, class: 'form__message', placeholder: 'メッセージを入力してください'
         .form__mask
           = f.label :image, class: 'form__mask__image' do
             = fa_icon 'picture-o', class: 'icon'
