@@ -18,6 +18,7 @@ document.addEventListener("turbolinks:load", function() {
       url: '/users',
       data: { search: input },
       dataType: 'json'
+    
     })
 
     .done(function(users) {
