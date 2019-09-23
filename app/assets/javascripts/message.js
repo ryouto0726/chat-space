@@ -48,6 +48,7 @@ $(function(){
       last_message_id = $('.message:last').data("message-id"); 
       var urlRegex = new RegExp("groups/\[0-9]{1,}/messages")
     var currentUrl = location.pathname
+
     
     if( urlRegex.test(currentUrl) ) {
       $.ajax({
