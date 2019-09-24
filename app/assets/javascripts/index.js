@@ -10,6 +10,7 @@ document.addEventListener("turbolinks:load", function() {
   }
 
   $('#user-search-field').on('keyup', function() {
+    console.log('hoge');
     var input = $('#user-search-field').val();
 
     $.ajax({
@@ -20,7 +21,6 @@ document.addEventListener("turbolinks:load", function() {
     })
 
     .done(function(users) {
-
       $('#user-search-result .chat-group-user').remove();
 
       if(input.length !== 0) {
