@@ -1,4 +1,3 @@
-  
 document.addEventListener("turbolinks:load", function() {
 
   function appendResult(user) {
@@ -18,7 +17,6 @@ document.addEventListener("turbolinks:load", function() {
       url: '/users',
       data: { search: input },
       dataType: 'json'
-    
     })
 
     .done(function(users) {
@@ -63,4 +61,4 @@ document.addEventListener("turbolinks:load", function() {
       $('#user-search-result').append($(this).parent());
     }
   })
-}); 
+});  
