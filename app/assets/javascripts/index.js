@@ -1,4 +1,4 @@
-document.addEventListener("turbolinks:load", function() {
+$(function() {
 
   function appendResult(user) {
     var html = `<div class="chat-group-user clearfix">
